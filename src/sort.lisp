@@ -22,7 +22,7 @@
 	(rewind source)
 	(rewind destination))
 
-;; Returns true the first string is valued "less" than the second
+;; Returns true if the first string is valued "less" than the second
 ;; @param a First string
 ;; @param b Second string
 (function a_menor_que_b ((char* a)
