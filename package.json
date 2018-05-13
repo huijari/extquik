@@ -2,9 +2,9 @@
   "name": "tp1",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "build": "tucker build"
+    "build": "tucker build",
+    "test": "./run_tests.sh"
   },
   "keywords": [],
   "author": "",

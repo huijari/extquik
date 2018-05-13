@@ -7,7 +7,7 @@ fi
 
 mem=$1
 
-exe="./tp1"
+exe="build/tp1"
 tests="testes"
 results="resultados"
 
