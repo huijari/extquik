@@ -1,3 +1,4 @@
+(include <stdbool.h>)
 (include <stdio.h>)
 (include "mem.h")
 
@@ -20,6 +21,17 @@
 	(mathias_free buffer)
 	(rewind source)
 	(rewind destination))
+
+;; Returns true the first string is valued "less" than the second
+;; @param a First string
+;; @param b Second string
+(function a_menor_que_b ((char* a)
+												 (char* b)
+												 (int length)) -> int
+	(for ((int i = 0) (< i length) i++)
+		(if (< a[i] b[i]) (return true))
+		(if (> a[i] b[i]) (return false)))
+	(return false))
 
 ;; Sort a file and output the content to another file, using a maximum
 ;; of memory indicated by the user
